@@ -14,7 +14,8 @@ public class Main {
 
         if (hasNextInt) {
             int yearOfBirth = scanner.nextInt();
-            scanner.nextLine(); // Handle next line character (enter key)
+            // Handle next line character (enter key)
+            scanner.nextLine();
 
             System.out.println("Enter your name: ");
             String name = scanner.nextLine();
