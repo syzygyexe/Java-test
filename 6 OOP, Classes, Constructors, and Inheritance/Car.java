@@ -13,7 +13,7 @@ public class Car {
     public void setModel(String model) {
         String validModel = model.toLowerCase();
         // Only if the passed value is equal to carrera or holden we will allow
-        // our class to change the value
+        // our class to change the value.
         if(validModel.equals("carrera") || validModel.equals("commodore")) {
             this.model = model;
         } else {
