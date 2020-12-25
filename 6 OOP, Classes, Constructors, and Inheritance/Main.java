@@ -20,5 +20,20 @@ public class Main {
 
         bobsAccount.deposit(51.0);
         bobsAccount.withdrawal(100.0);
+
+        Account timsAccount = new Account("Tim", "tim@email.com", "12345");
+        System.out.println(timsAccount.getNumber() + " name " + timsAccount.getCustomerName());
+
+        VipCustomer person1 = new VipCustomer();
+        System.out.println(person1.getName());
+
+        VipCustomer person2 = new VipCustomer("Bob", 25000.00);
+        System.out.println(person2.getName());
+
+        VipCustomer person3 = new VipCustomer("Tim", 100.00, "alex@gmail.com");
+        System.out.println(person3.getName());
+
+        System.out.println(timsAccount.getBalance());
+        System.out.println(person3.getCreditLimit());
     }
 }
