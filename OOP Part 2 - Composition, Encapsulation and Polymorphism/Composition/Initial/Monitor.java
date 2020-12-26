@@ -3,10 +3,10 @@ package com.company;
 public class Monitor {
     private String model;
     private String manufacturer;
-    private String size;
+    private int size;
     private Resolution nativeResolution;
 
-    public Monitor(String model, String manufacturer, String size, Resolution nativeResolution) {
+    public Monitor(String model, String manufacturer, int size, Resolution nativeResolution) {
         this.model = model;
         this.manufacturer = manufacturer;
         this.size = size;
@@ -25,7 +25,7 @@ public class Monitor {
         return manufacturer;
     }
 
-    public String getSize() {
+    public int getSize() {
         return size;
     }
 
@@ -33,3 +33,4 @@ public class Monitor {
         return nativeResolution;
     }
 }
+
